@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRINKY-Portfolio Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
+    <link href="https://font.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+        }
+        .navbar{
+            background-color: cornflowerblue;
+        }
+        .navbar ul{
+            display: flex;
+            justify-content: right;
+        }
+        .navbar ul li{
+            list-style: none;
+            margin-left: 20px;
+            padding: 20px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: 'Tilt Prism', cursive;
+            color: white;
+        }
+        .LOGO{
+            
+            height: 40px;
+            width: 150px;
+            border: 2px solid rebeccapurple;
+            position: absolute;
+            top: 15px;
+            left: 100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: fantasy;
+            font-size: 30px;
+        }
+        .sec1{
+            width: 100%;
+            height: 700px;
+            background-color: rgb(36, 55, 56);
+            border:2px solid black ;
+            display: flex;
+            
+
+        }
+        .bu1{
+            margin-top: 100px;
+            margin-left: 250px;
+            height: 30px;
+            width: 100px;
+            border-radius: 7px;
+           opacity: 0.6;
+           text-transform: uppercase;
+           
+        
+        }
+        .bu1:hover{
+            background-color: rgb(255, 115, 0);
+            color: rgb(255, 0, 0);
+        }
+      
+        .bu3{
+            margin-top: 28px;
+            margin-left: 100px;
+            height: 30px;
+            width: 150px;
+            border-radius: 12px;
+           opacity: 0.6;
+           text-transform: uppercase;
+           font-weight: bold;
+           
+        
+        }
+        .bu3:hover{
+            background-color: rgb(200, 255, 0);
+            color: rgb(206, 156, 156);
+        }
+        .bu4{
+            margin-left: 70px;
+            height: 30px;
+            width: 150px;
+            border-radius: 12px;
+           opacity: 0.6;
+           text-transform: uppercase;
+           font-weight: bold;
+
+        }
+        .bu4:hover{
+            background-color: rgb(187, 255, 0);
+            color: rgb(207, 172, 172);
+
+        }
+        .bu5{
+           
+            margin-left: 70px;
+            height: 30px;
+            width: 150px;
+            border-radius: 12px;
+           opacity: 0.6;
+           text-transform: uppercase;
+           font-weight: bold;
+           
+        
+        }
+        .bu5:hover{
+            background-color: rgb(217, 255, 0);
+            color: rgb(206, 156, 156);
+        }
+        .bu6{
+            margin-left: 70px;
+            height: 40px;
+            width: 150px;
+            border-radius: 12px;
+           opacity: 0.6;
+           text-transform: uppercase;
+           font-weight: bold;
+
+        }
+        .bu6:hover{
+            background-color: rgba(145, 255, 0, 0.925);
+            color: rgb(207, 172, 172);  
+        } 
+        .sec2{
+            width: 100%;
+            height: 700px;
+            background-color: rgb(36, 55, 56);
+            border:2px solid black ;
+            display: flex;
+
+        }
+
+        .tx1{
+            text-decoration: none;
+            text-decoration: underline;
+            font-size: 80px;
+            margin-top: 40px ;
+            margin-left: 10px;
+            text-transform: uppercase;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(202, 36, 36);
+
+        }
+        .tx2{
+            text-decoration: none;
+            font-size: 15px;
+            text-align: left;
+            margin-top: 25px;
+            margin-left:8px;
+            margin-right: 100px;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(201, 177, 177);
+        }
+        .tx3{
+            text-decoration: none;
+            text-decoration: underline;
+            font-size: 80px;
+            margin-top: 40px ;
+            margin-left: 10px;
+            text-transform: uppercase;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(202, 36, 36);
+
+
+        }
+        .sec3{
+            width: 100%;
+            height: 700px;
+            background-color: rgb(36, 55, 56);
+            border:2px solid black ;
+
+        }
+        .text1{
+            text-decoration: none;
+            font-size: 60px;
+            margin-top: 150px ;
+            margin-left: 100px;
+            text-transform: uppercase;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(202, 36, 36);
+
+        }
+        .text2{
+            text-decoration: none;
+            font-size: 40px;
+            margin-top: 30px ;
+            margin-left: 200px;
+            text-transform: uppercase;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(235, 156, 156);
+        }
+        .text3{
+            text-decoration: none;
+            font-size: 10px;
+            margin-top: 60px ;
+            margin-left: 200px;
+            text-transform: uppercase;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(235, 156, 156);
+        }
+        .image1{
+            margin-top: 100px;
+            margin-left:200px;
+            height: 450px;
+            width: 350px;
+        }
+        .image20{
+            margin-top: 20px;
+            margin-left:10px;
+            height: 30px;
+            width: 30px;
+        }
+        .image2{
+            margin-top: 210px;
+            margin-right:140px;
+            height: 350px;
+            width: 390px;
+
+        }
+        .box{
+           
+            margin-left: 20px;
+            margin-top: 20px;
+            padding: 20px;
+            padding-left: 20px;
+            text-align: center;
+            display: flex;
+            
+        }
+        .child{
+            height: 300px;
+            width: 350px;
+            margin-left: 40px;
+            background-color: rgb(222, 214, 230);
+            border-radius: 20px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+
+            /* background-image: url("C:\Users\User\Desktop\fl1\CSS\pngegg.png"); */
+        }
+        .sec4{
+            width: 100%;
+            height: 700px;
+            background-color: rgb(36, 55, 56);
+            border:2px solid black ;
+
+        }
+
+       
+       .tx4{
+            text-decoration: none;
+            font-size: 80px;
+            text-align: left;
+            margin-top: 25px;
+            margin-left:28px;
+            margin-right: 100px;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(201, 177, 177);
+       }
+       .tx5
+       {
+            text-decoration: none;
+            font-size: 80px;
+            text-align: left;
+            margin-top: 10px;
+            margin-left:30px;
+            margin-right: 100px;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(177, 28, 28);
+       }
+       
+       .sec4{
+        display: flex;
+       }
+
+       .sec5{
+            width: 100%;
+            height: 250px;
+            background-color: rgb(36, 55, 56);
+            border:2px solid black ;
+            display: flex;
+
+        }
+        .bu7{
+           
+            height: 30px;
+            width: 150px;
+            border-radius: 12px;
+           opacity: 0.6;
+           text-transform: uppercase;
+           font-weight: bold;   
+        }
+        .bu7:hover{
+            background-color: blue;
+            color: rgb(255, 255, 255);
+
+        }
+       
+        .image3{
+            margin-top: 410px;
+            margin-left: 20px;
+        
+            /* margin-right: 500px; */
+    
+            height: 250px;
+            width: 290px;
+
+        }
+        .sec5 div{
+            display: flex;
+            text-decoration: none;
+            font-size: 25px;
+            /* text-align: left; */
+            margin-top: 125px;
+            margin-left:1508px;
+            margin: 120px;
+            font-family:'Tilt Prism', cursive;
+            color: rgb(235, 225, 225);
+        }
+        #image11{
+            background-image: url("C:\Users\User\Desktop\fl1\CSS\pngegg.png");
+
+        }
+        #image12{
+            background-image: url("C:\Users\User\Desktop\fl1\CSS\pngegg.png");
+        }
+        #image13{
+            background-image: url("C:\Users\User\Desktop\fl1\CSS\pngegg.png");
+        }
+        #form{
+            margin: 70px;
+            margin-left: 100px;
+        }
+        input{
+            background-color: transparent;
+            color: white;
+            width: 250px;
+        }
+        textarea{
+            background-color: transparent;
+
+        }
+        .child1{
+            height: 200px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-image: url('./pngegg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .child2{
+            height: 200px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-image: url('./pngegg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .child3{
+            height: 200px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-image: url('./pngegg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .footer{
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(34, 51, 51);
+            height: 150px;
+            
+            
+        }
+        .footer ul{
+            display: flex;
+            justify-content: center;
+            color: beige;
+
+        }
+        .footer ul li{
+            list-style: none;
+            margin-left: 70px;
+            margin-top: 20px;
+            font-size: 20px;
+            
+        }
+       .footer ul li a{
+        color: aliceblue;
+        text-decoration: none;
+       }
+       .icon{
+        font-size: 30px;
+        justify-content: center;
+        margin-left: 590px;
+        margin-top: 20px;
+
+       }
+       .trm1{
+        font-size: 20px;
+        justify-content: right;
+        text-align: right;
+       }
+       
+       
+       
+
+
+        
+    </style>
+
+</head>
+
+<body>
+   
+    <header class="navbar">
+        <div class="LOGO">
+         LOGO
+        </div>
+        <ul>
+            <li><a href="navbar.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+           
+        
+        </ul> 
+
+
+    </header>
+    <section class="sec1">
+        <div>
+            <h2 class="text1">MY NAME IS KRINKY</h2>
+            <h4 class="text2">I'm a developer</h4>
+            <h4 class="text3">Based in Los Angeles, california</h4>
+            <button class="bu1">Let's Start</button>
+           
+
+        </div>
+        <div>
+            <img class="image1" src= "c:\Users\User\Favorites\Downloads\home-banner.png"alt="image1">
+        </div>
+     
+    </section>
+    <section
+        class="sec2">
+       <div>
+        <h1 class="tx1">ABOUT</h1>
+        <h6 class="tx2">Copy either php.ini-dist or php.ini-recommended (preferably the latter) to your 
+            Windows directory (C:\Winnt or C:\Winnt40), and rename it php.ini. Open this file in 
+            a text editor (for example, Notepad). Edit this file to get configuration directives; We 
+            highly recommend new users set error reporting to E_ALL on their development 
+            machines at this point. For now, the most important thing is the doc_root directive 
+            under the Paths and Directories section. make sure this matches your IIS Inetpub 
+            folder (or wherever you plan to serve out of).Copy either php.ini-dist or php.ini-recommended (preferably the latter) to your 
+            Windows directory (C:\Winnt or C:\Winnt40), and rename it php.ini. Open this file in 
+            a text editor (for example, Notepad). Edit this file to get configuration directives; We 
+            highly recommend new users set error reporting to E_ALL on their development 
+            machines at this point. For now, the most important thing is the doc_root directive 
+            under the Paths and Directories section. make sure this matches your IIS Inetpub 
+            folder (or wherever you plan to serve out of).Copy either php.ini-dist or php.ini-recommended (preferably the latter) to your 
+            Windows directory (C:\Winnt or C:\Winnt40), and rename it php.ini. Open this file in 
+            a text editor (for example, Notepad). Edit this file to get configuration directives; We 
+            highly recommend new users set error reporting to E_ALL on their development 
+            machines at this point. For now, the most important thing is the doc_root directive 
+            under the Paths and Directories section We highly recommend new users set error reporting to E_ALL on their development machines at this point. For now, the most important thing is the doc_root directive under the Paths and Directories section....</h6>
+        </div>
+        <div>
+         <img class="image2"src="C:\Users\User\Desktop\fl1\CSS\download 1.png" alt="image2">
+        </div>
+    </section>
+    <section
+    class="sec3">
+    <div>
+        <h1 class="tx3">My Services</h1>
+        <button class="bu3">web design</button>
+        <button class="bu4">Development</button>
+        <button class="bu5">SEO Markiting</button>
+        <button class="bu6">Web development</button>
+    </div>
+
+    <div class="box">
+        <div class="child" id="img11">
+            <div class="child1"></div>
+        </div>
+        <div class="child" id="img12">
+            <div class="child2"></div>
+        </div>
+        <div class="child" id="img13">
+            <div class="child3"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sec4">
+        <div>
+            <h3 class="tx4">Got a Project in</h3>
+            <h3 class="tx5">Mind?</h3>
+            <img src="pngegg.png" alt="" width="500px">
+        </div>
+       
+        <form action="" id="form">
+            <label  for="">Name</label><br>
+            <input type="text" placeholder="Name"><br><br>
+            <label  for="">Email</label><br>
+            <input type="email" placeholder="Email"><br><br>
+            <label  for="">Message</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br><br><br>
+            <button class="bu7">Send Message</button>
+
+            
+        </form>
+    </section>
+ <footer class="footer">
+       
+           <ul>
+            <li><a href=""><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a></li>
+            <li><a href=""><i class="fa-regular fa-address-card"></i>&nbsp;&nbsp;About me</a></li>
+            <li><a href=""><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Contact</a></li>
+           </ul>
+       <div class=" icon">
+        <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-twitter"></i>
+
+ 
+       </div>
+       <div class="trm1">
+        <h6> Terms of Services-privacy Policy</h6>
+       </div>
+
+       
+    </footer>
+
+    
+</body>
+</html>
